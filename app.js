@@ -1,24 +1,27 @@
-// Versão base 0.1.0
+// Versão 1.0.0
 const elCount = document.getElementById("count");
 const elIncrement = document.getElementById("btn-increment");
 const elDecrement = document.getElementById("btn-decrement");
 const elToggleTheme = document.getElementById("btn-toggle-theme");
 const elTitle = document.getElementById("title");
 
-function setCount(newValue) {
+function updateCount(newValue) {
   elCount.textContent = String(newValue);
 }
 
-let state = { count: 0, dark: false };
+let state = {
+  count: 0,
+  dark: false
+};
 
 elIncrement.addEventListener("click", () => {
   state.count += 2;
-  setCount(state.count);
+  updateCount(state.count);
 });
 
 elDecrement.addEventListener("click", () => {
   state.count -= 2;
-  setCount(state.count);
+  updateCount(state.count);
 });
 
 elToggleTheme.addEventListener("click", () => {
@@ -48,5 +51,8 @@ elToggleTheme.addEventListener("click", () => {
     ? "Mini App – Modo Escuro"
     : "Mini App – GitFlow";
 
-  elToggleTheme.setAttribute("aria-pressed", String(state.dark));
+  elToggleTheme.setAttribute(
+    "aria-pressed",
+    String(state.dark)
+  );
 });
