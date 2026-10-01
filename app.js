@@ -4,6 +4,9 @@ const elDecrement = document.getElementById("btn-decrement");
 const elToggleTheme = document.getElementById("btn-toggle-theme");
 const elTitle = document.getElementById("title");
 
+const LIGHT_TITLE = "Mini App – Equipe B";
+const DARK_TITLE = "Mini App – Modo Escuro";
+
 function updateCount(newValue) {
   elCount.textContent = String(newValue);
 }
@@ -47,8 +50,8 @@ elToggleTheme.addEventListener("click", () => {
   );
 
   elTitle.textContent = state.dark
-    ? "Mini App – Modo Escuro"
-    : "Mini App – Equipe B";
+    ? DARK_TITLE
+    : LIGHT_TITLE;
 
   elToggleTheme.setAttribute(
     "aria-pressed",
