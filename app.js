@@ -1,4 +1,3 @@
-// Versão 1.0.0
 const elCount = document.getElementById("count");
 const elIncrement = document.getElementById("btn-increment");
 const elDecrement = document.getElementById("btn-decrement");
@@ -49,7 +48,7 @@ elToggleTheme.addEventListener("click", () => {
 
   elTitle.textContent = state.dark
     ? "Mini App – Modo Escuro"
-    : "Mini App – GitFlow";
+    : "Mini App – Equipe B";
 
   elToggleTheme.setAttribute(
     "aria-pressed",
