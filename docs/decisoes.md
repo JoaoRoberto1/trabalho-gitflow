@@ -1,6 +1,11 @@
 Diário de Decisões e Conflitos
 Conflito 1 — app.js
 
+## Integrantes
+
+- João Roberto
+- David Gonçalves
+
 Arquivo/linhas: app.js, na função responsável pela atualização do contador e nos eventos dos botões.
 
 Causa: as branches feature/incremento-rename e feature/tema-ajustavel alteraram simultaneamente a lógica do contador. O Aluno B renomeou setCount para updateCount e alterou o incremento para 2 em 2. O Aluno C também alterou o incremento para 2 em 2.
